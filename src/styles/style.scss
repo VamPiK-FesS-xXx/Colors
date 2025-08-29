@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+$rb: Roboto;
+* {
+    font-family: $rb;
+}
+
+.container-col {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    .col {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: aqua;
+        width: 100%;
+        border: 1px solid black;
+        align-items: center;
+        .col-text {
+            font-size: 2em;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 10px;
+            text-align: center;
+            transition: background 0.3s;
+            border-radius: 10px;
+            &:hover {
+                background: rgb(0, 0, 0, 0.3);
+                transition: background 0.3s;
+            }
+        }
+        .col-btn {
+            background: transparent;
+            padding: 10px;
+            transition: background-color 0.3s;
+            border-radius: 10px;
+            font-size: 1.5em;
+            &:hover {
+                background-color: rgb(0, 0, 0, 0.3);
+                transition: background-color 0.3s;
+            }
+        }
+    }
+}
